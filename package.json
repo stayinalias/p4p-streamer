@@ -1,0 +1,13 @@
+{
+  "name": "p2p-magnet-streamer",
+  "version": "1.0.0",
+  "description": "Server-side BitTorrent client that streams any magnet link to the browser over HTTP Range.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "webtorrent": "^3.0.21"
+  }
+}
