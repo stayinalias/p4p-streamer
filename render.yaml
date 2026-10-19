@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: p2p-streamer
+    runtime: node
+    plan: free
+    region: singapore
+    branch: main
+    rootDir: server
+    buildCommand: npm install
+    startCommand: node server.mjs
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: ALLOW_ORIGIN
+        sync: false
